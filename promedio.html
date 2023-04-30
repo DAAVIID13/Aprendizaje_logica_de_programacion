@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>PROMEDIO DE LAS EDADES DE UNA FAMILIA</h1>
+<script>
+	function saltarLinea() {
+        document.write("<br>");        
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    imprimir("WHILE")
+    var dato_miembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia: "));
+    var suma_promedio = 0;
+    var contador = 1;
+    while (contador<=dato_miembros){
+        var edades = parseInt(prompt("Edad del miembro "+contador+": "));
+        suma_promedio=suma_promedio+edades;
+        contador++;
+    } 
+
+    imprimir(suma_promedio/dato_miembros);
+
+    imprimir("NORMAL")
+    var edadP=40;
+    var edadM=40;
+    var hijo=15;
+    var hija=12;
+
+    var total_edad = (edadM+edadP+hijo+hija)/4;
+    imprimir(total_edad)
+</script>

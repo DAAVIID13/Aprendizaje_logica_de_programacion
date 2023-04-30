@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>CALCULAR LOS PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+<script>  
+    function imprimir(frase) {
+        document.write(frase);
+        document.write("<br>");
+    }
+    
+    var victorias = parseInt(prompt("¿Cuantos partidos gano el equipo?: "))
+    var empates = parseInt(prompt("¿Cuantos partidos empato el equipo?: "))
+
+    puntos_totales = victorias*3+empates
+    imprimir("Total de puntosl del equipo es: "+puntos_totales)
+
+    if (puntos_totales>20) {
+         imprimir("El equipo está mejor que el año pasado")
+    } else {
+        if (puntos_totales<20) {
+            imprimir("El equipo está peor que el año pasado")
+        } else {
+            imprimir("El equipo está igual que el año pasado")
+        }
+    }
+
+</script>
